@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zitthenk học sản đồ</title>
+<meta name="description" content="Học sản đồ WHO tương tác: cơ chế → ghi → đọc → xử trí">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Mali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top">
+  <button id="home" class="logo" title="Về trang đầu">🌸 <span>zitthenk học sản đồ</span></button>
+  <nav id="tabs" aria-label="Các chương"></nav>
+  <span id="stars" class="chip c-yellow" title="Số màn đã xong">⭐ 0</span>
+  <button id="menu" class="chip c-lav" title="Mục lục">🗺️ <span>Mục lục</span></button>
+  <div id="bar"><i></i></div>
+</header>
+<div id="sub"><div id="where"></div><div id="dots"></div></div>
+
+<main id="stage"></main>
+
+<footer id="nav">
+  <button id="prev" class="btn ghost" aria-label="Màn trước">◀ <span>Lùi</span></button>
+  <span id="pos"></span>
+  <button id="next" class="btn go">Tiếp ▶</button>
+</footer>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="map" hidden></div>
+<div id="fx"></div>
+
+<script src="chart.js"></script>
+<script src="art.js"></script>
+<script src="app.js"></script>
+<script src="lessons-a.js"></script>
+<script src="lessons-b.js"></script>
+<script src="lessons-c.js"></script>
+<script>addEventListener('load', () => Sando.start())</script>
+</body>
+</html>
